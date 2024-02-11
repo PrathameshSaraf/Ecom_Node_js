@@ -31,7 +31,7 @@ router.get(`/`, async (req, res) =>{
   } 
   res.send(product);
 })
- 
+   
 // update the product
 router.put('/:id',async (req, res)=> {
     

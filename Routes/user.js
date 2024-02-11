@@ -42,7 +42,7 @@ router.post('/',async (req,res)=>{
 
     res.send(user);
 });
-
+ 
 router.post('/login',async (req,res)=>{
     const user=await User.findOne({email:req.body.email})
     const secret=process.env.secret;
